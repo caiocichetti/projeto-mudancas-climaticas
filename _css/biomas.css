@@ -1,0 +1,39 @@
+@charset "utf-8";
+section#conteudo{
+	width:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	background-color:#dddddd;
+	height:830px;
+	
+}
+
+iframe#frame-bioma{
+	position:relative;
+	left:10px;
+	top:-450px;
+	width:400px;
+	height:450px;
+	border:none;
+	overflow:hidden;
+
+}
+
+iframe#frame-bioma:-webkit-scrollbar{
+	display:none;
+
+}
+
+img#mapa{
+	position:relative;
+	left:40px;
+
+}
+
+area{
+	outline:none;/*Retira o contorno amarelo da tag area*/
+}
+
+
+
+

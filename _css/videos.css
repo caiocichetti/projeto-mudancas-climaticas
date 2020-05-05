@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+section#principal{
+	margin-top:10px;
+	margin-left:130px;
+	height:450px;
+}
+
+video#media{
+	background-color:#000000;
+	display:block;
+	position:relative;
+	top:-420px;
+	left:26px;
+	border-color:#000;
+}
+
+div#videos{
+	height:220px;
+	overflow-x:scroll;
+	overflow-y:hidden;
+	white-space: nowrap;
+	padding:10px;	
+}
