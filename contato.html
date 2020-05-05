@@ -25,31 +25,180 @@
             </nav>
   		</header>
 <!--[AQUI TEM INICIO O FORMULÁRIO]-->
-
+			<form method="post" action="mailto:daniel.mendonca@essj.com.br">
 <!--[AQUI TEM INICIO O PRIMEIRO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-
+				<fieldset id="usuario">
+					<legend>Identificação do Usuário</legend>
+					<p>
+						<label for="cnome">Nome:</label>
+						<input
+							type="text"
+							name="tnome"
+							id="cnome"
+							size="20"
+							maxlength="30"
+							placeholder="Nome Completo"
+						/>
+					</p>
+					<p>
+						<label for="csenha">Senha:</label>
+						<input
+							type="password"
+							name="tsenha"
+							id="csenha"
+							size="8"
+							maxlength="8"
+							placeholder="8 Digitos"
+						/>
+					</p>
+					<p>
+						<label for="cemail">E-mail:</label>
+						<input
+							type="email"
+							name="temail"
+							id="cemail"
+							size="20"
+							maxlength="40"
+							placeholder="email@email.com.br"
+						/>
+					</p>
+					<p>
+						<label for="cnasc">Data de Nascimento:</label>
+						<input
+							type="date"
+							name="tnasc"
+							id="cnasc"
+						/>
+					</p>
 <!--[AQUI TEM INICIO O SEGUNDO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-				
+				<fieldset id="sexo">
+					<legend>Sexo:</legend>
+					<input
+						type="radio"
+						name="tsexo"
+						id="cmasc"
+						checked
+					/>
+					<label for="cmasc">Masculino</label>
+					<br>
+					<input
+						type="radio"
+						name="tsexo"
+						id="cfem"
+					/>
+					<label for="cfem">Feminino</label>
+				</fieldset>
 <!--[AQUI FINALIZA O SEGUNDO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-				 
+				</fieldset>
 <!--[AQUI FINALIZA O PRIMEIRO GRUPO DE CAMPOS DO FORMULÁRIO]-->
 
 <!--[AQUI TEM INICIO O TERCEIRO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-			
+				<fieldset>
+					<legend>Endereço do Usuário</legend>
+					<p>
+						<label for="crua"> Logradouro:</label>
+						<input
+							type="text"
+							name="trua"
+							id="crua"
+							size="13"
+							maxlength="80"
+							placeholder="Endereço"
+						/>
+					</p>
+					<p>
+						<label for="cnum">Número:</label>
+						<input type="number" name="tnum" id="cnum" min="0" max="9999"/>
+					</p>
+					<p>
+						<label for="cest">Estado:</label>
+						<select name="test" id="cest">
+							<optgroup label="Região Sudeste">
+								<option selected value="SP">São Paulo</option>
+								<option selected value="MG">Minas Gerais</option>
+							</optgroup>
+							<optgroup label="Região Sul">
+								<option value="PR">Paraná</option>
+								<option value="SC">Santa Catarina</option>
+							</optgroup>
+						</select>
+					</p>
+					<p>
+						<label for="ccid">Cidade:</label>
+						<input
+							type="text"
+							name="tcid"
+							id="ccid"
+							size="20"
+							maxlength="30"
+							placeholder="Sua Cidade"
+							list="cidades"
+						/>
+					</p>
+					<p>
+						<datalist id="cidades">
+							<option value="Campinas"></option>
+							<option value="Sumaré"></option>
+							<option value="Limeira"></option>
+							<option value="Valinhos"></option>
+						</datalist>
+					</p>
+				</fieldset>
 <!--[AQUI FINALIZA O TERCEIRO GRUPO DE CAMPOS DO FORMULÁRIO]-->	
 
 <!--[AQUI TEM INICIO O QUARTO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-			
+				<fieldset id="mensagem">
+					<legend>Mensagem do Usuário</legend>
+					<p>
+						<label for="curg">Grau da Urgência: Min</label>
+						<input type="range" name="turg" id="curg" step="5" min="0" max="10"/>
+						Max
+					</p>
+					<p>
+						<label for="cmsg">Mensagem:</label>
+						<textarea name="tmsg" 
+							id="csmg" 
+							rows="10" 
+							cols="45" 
+							placeholder="Deixe sua mensagem"
+						></textarea>
+					</p>
+				</fieldset>
 <!--[AQUI FINALIZA O QUARTO GRUPO DE CAMPOS DO FORMULÁRIO]-->
 
 <!--[AQUI TEM INICIO O QUINTO GRUPO DE CAMPOS DO FORMULÁRIO]-->
-			
+				<fieldset id="pedido">
+					<legend>Boleto Informativo</legend>
+					<p>
+						<input type="checkbox" name="tped" id="cped" checked/>
+						<label for="cped">Desejo assinar o boleto Informativo</label>
+					</p>
+					<p>
+						<label for="cqtd">Quantidade de Impressões:</label>
+						<input type="number" min="1" max="100" value="1"/>
+					</p>
+					<p>
+						<label for="ccor">Selecione a cor de impressão:</label>
+						<input type="color" name="tcor" id="coor" value="#000FFF"/>
+					</p>
+					<p>
+						<label for="ctot">Total R$</label>
+						<input
+							type="text"
+							name="ttot"
+							id="ctot"
+							readonly
+							placeholder="Valor Total"
+						/>
+					</p>
+				</fieldset>
 <!--[AQUI FINALIZA O QUINTO GRUPO DE CAMPOS DO FORMULÁRIO]-->
 
 <!--[AQUI INICIA O BOTÃO ENVIAR]-->
-
-<!--[AQUI FINALIZA O BOTÃO ENVIAR]-->	
-
+				<button id="enviar" type="submit" name="tenviar"></button>
+<!--[AQUI FINALIZA O BOTÃO ENVIAR]-->
+	
+			</form>
 <!--[AQUI FINALIZA O FORMULÁRIO]-->
 		<footer id="rodape">
 			<p>Copyright &copy; 2014 - Curso Técnico de Informática <br>
