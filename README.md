@@ -1,2 +1,2 @@
 # projeto-mudancas-climaticas
- Codigo desenvolvido durante o ano letivo na materia de desenvolvimento de aplicativos
+ Projeto desenvolvido durante o ano letivo da materia de Desenvolvimento de Aplicativos 
