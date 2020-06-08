@@ -4,90 +4,90 @@
 body {}
 
 /* Formatação da div Interface */
-div #interface {}
+div#interface {}
 
 /* Fromatação das tags <p> */
 p {}
 
 /* Formatação de imagens com legendas */
-figure .foto-com-legenda {
+figure.foto-com-legenda {
   border: 8px white solid;
 }
 
-figure .foto-com-legenda img {}
+figure.foto-com-legenda img {}
 
-figure .foto-com-legenda figcaption {}
-figure .foto-com-legenda:hover figcaption {}
+figure.foto-com-legenda figcaption {}
+figure.foto-com-legenda:hover figcaption {}
 
 /* Formatação do menu principal */
-nav #menu {}
-nav #menu ul {}
-nav #menu li {}
-nav #menu h1 {}
-nav #menu li:hover {}
-nav #menu a {}
-nav #menu a:hover {}
+nav#menu {}
+nav#menu ul {}
+nav#menu li {}
+nav#menu h1 {}
+nav#menu li:hover {}
+nav#menu a {}
+nav#menu a:hover {}
 
 /* Formatação da taga <header> e seu conteúdo */
-header #cabecalho img {}
+header#cabecalho img {}
 
-header #cabecalho {
+header#cabecalho {
   border-bottom: 2px #606060 solid;
 }
 
-header #cabecalho hgroup {}
-header #cabecalho h1 {}
-header #cabecalho h2 {}
+header#cabecalho hgroup {}
+header#cabecalho h1 {}
+header#cabecalho h2 {}
 
 /* Formatação da tag <section> */
-section #corpo {
+section#corpo {
   border-right: 2px solid #606060;
 }
 
 /* Formatação da tag <article> e seu conteúdo */
-article #noticia-principal h2 {}
-article #cabecalho-artigo h1 {}
-article #cabecalho-artigo h2 {}
-article #cabecalho-artigo h3 {}
+article#noticia-principal h2 {}
+article#cabecalho-artigo h1 {}
+article#cabecalho-artigo h2 {}
+article#cabecalho-artigo h3 {}
 
 /* Formataação da tag <aside> e seu conteúdo */
-aside #lateral {
+aside#lateral {
   border: 2px #606060 solid;
 }
 
-aside #lateral h1 {}
-aside #lateral h2 {}
+aside#lateral h1 {}
+aside#lateral h2 {}
 
 /* Formatação da tag <footer> e seu conteúdo */
-footer #rodape {
+footer#rodape {
   border-top: 2px #606060 solid;
 }
 
-footer #rodape p {}
-footer #rodape img {}
+footer#rodape p {}
+footer#rodape img {}
 
 /* Formatação da Tabela */
-table #tabeladados {
+table#tabeladados {
   border: 1px solid #606060;
   border-spacing: 0px;
 }
 
-table #tabeladados td {
+table#tabeladados td {
   border: 1px solid #606060;
 }
 
-table #tabeladados td .esquerdo {}
-table #tabeladados td .direito {}
-table #tabeladados caption {}
-table #tabeladados caption span {} 
+table#tabeladados td .esquerdo {}
+table#tabeladados td .direito {}
+table#tabeladados caption {}
+table#tabeladados caption span {} 
 
 /* Formatação da tag <video> e seu conteúdo */
-video #efeito-estufa {
+video#efeito-estufa {
   border: 2px #606060 solid;
 }
 
-video #outros-videos {}
-div #video1 {}
+video#outros-videos {}
+div#video1 {}
 
 /* Formatação da tag <blockquote> */
 blockquote {
@@ -96,4 +96,4 @@ blockquote {
 
 /* Formatação da classe .direita */
 .direita {}
-div #imagem {}
+div#imagem {}
