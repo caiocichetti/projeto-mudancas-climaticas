@@ -7,7 +7,10 @@ body {}
 div#interface {}
 
 /* Fromatação das tags <p> */
-p {}
+p {
+  text-align: justify;
+  text-indent: 50px;
+}
 
 /* Formatação de imagens com legendas */
 figure.foto-com-legenda {
@@ -21,11 +24,19 @@ figure.foto-com-legenda:hover figcaption {}
 
 /* Formatação do menu principal */
 nav#menu {}
-nav#menu ul {}
+
+nav#menu ul {
+  text-transform: uppercase;	
+}
+
 nav#menu li {}
 nav#menu h1 {}
 nav#menu li:hover {}
-nav#menu a {}
+
+nav#menu a {
+	text-decoration: none;
+}
+
 nav#menu a:hover {}
 
 /* Formatação da taga <header> e seu conteúdo */
@@ -36,7 +47,11 @@ header#cabecalho {
 }
 
 header#cabecalho hgroup {}
-header#cabecalho h1 {}
+
+header#cabecalho h1 {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .6)
+}
+
 header#cabecalho h2 {}
 
 /* Formatação da tag <section> */
@@ -63,7 +78,10 @@ footer#rodape {
   border-top: 2px #606060 solid;
 }
 
-footer#rodape p {}
+footer#rodape p {
+  text-align: center;
+}
+
 footer#rodape img {}
 
 /* Formatação da Tabela */
@@ -74,6 +92,7 @@ table#tabeladados {
 
 table#tabeladados td {
   border: 1px solid #606060;
+  border-spacing: 0px;
 }
 
 table#tabeladados td .esquerdo {}
@@ -92,8 +111,12 @@ div#video1 {}
 /* Formatação da tag <blockquote> */
 blockquote {
   border-left: #009900 5px double;
+  text-align: justify;
 }
 
 /* Formatação da classe .direita */
-.direita {}
+.direita {
+  text-align: right;
+}
+
 div#imagem {}
