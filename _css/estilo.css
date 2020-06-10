@@ -1,10 +1,15 @@
 @charset="UTF-8";
 
 /* Formatação da tag <body> */
-body {}
+body {
+  background-color: #dddddd;
+  color: rgba(0, 0, 0, 1);
+}
 
 /* Formatação da div Interface */
-div#interface {}
+div#interface {
+  background-color: #ffffff;
+}
 
 /* Fromatação das tags <p> */
 p {
@@ -19,7 +24,11 @@ figure.foto-com-legenda {
 
 figure.foto-com-legenda img {}
 
-figure.foto-com-legenda figcaption {}
+figure.foto-com-legenda figcaption {
+  background-color: rgba(0, 0, 0, .4);
+  color: white;
+}
+
 figure.foto-com-legenda:hover figcaption {}
 
 /* Formatação do menu principal */
@@ -29,30 +38,44 @@ nav#menu ul {
   text-transform: uppercase;	
 }
 
-nav#menu li {}
+nav#menu li {
+  background-color: #dddddd;
+  text-decoration: none;
+}
+
 nav#menu h1 {}
-nav#menu li:hover {}
+
+nav#menu li:hover {
+  background-color: #606060;
+}
 
 nav#menu a {
+	color: #000000;
 	text-decoration: none;
 }
 
-nav#menu a:hover {}
+nav#menu a:hover {
+  color: #ffffff;
+}
 
 /* Formatação da taga <header> e seu conteúdo */
 header#cabecalho img {}
 
 header#cabecalho {
   border-bottom: 2px #606060 solid;
+  background: url(../_imagens/IMG3.png) no-repeat 0px 5px;
 }
 
 header#cabecalho hgroup {}
 
 header#cabecalho h1 {
+  color: #606060;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .6)
 }
 
-header#cabecalho h2 {}
+header#cabecalho h2 {
+	color: #888888;
+}
 
 /* Formatação da tag <section> */
 section#corpo {
@@ -60,18 +83,38 @@ section#corpo {
 }
 
 /* Formatação da tag <article> e seu conteúdo */
-article#noticia-principal h2 {}
-article#cabecalho-artigo h1 {}
-article#cabecalho-artigo h2 {}
-article#cabecalho-artigo h3 {}
+article#noticia-Principal h2 {
+  color: #606060;
+  background-color: #dddddd;
+}
+
+article#cabecalho-artigo h1 {
+  color: #606060;
+}
+
+article#cabecalho-artigo h2 {
+	color: #cecece;
+  background-color: #ffffff;
+}
+
+article#cabecalho-artigo h3 {
+  color: #606060;
+}
 
 /* Formataação da tag <aside> e seu conteúdo */
 aside#lateral {
   border: 2px #606060 solid;
+  background-color: #dddddd;
 }
 
-aside#lateral h1 {}
-aside#lateral h2 {}
+aside#lateral h1 {
+  color: #606060;
+}
+
+aside#lateral h2 {
+  background-color: #606060;
+  color: #ffffff;
+}
 
 /* Formatação da tag <footer> e seu conteúdo */
 footer#rodape {
@@ -95,10 +138,22 @@ table#tabeladados td {
   border-spacing: 0px;
 }
 
-table#tabeladados td .esquerdo {}
-table#tabeladados td .direito {}
-table#tabeladados caption {}
-table#tabeladados caption span {} 
+table#tabeladados td.esquerdo {
+  color: #ffffff;
+  background-color: #606060;
+}
+
+table#tabeladados td.direito {
+  background-color: #cecece;
+}
+
+table#tabeladados caption {
+  color: #888888;
+}
+
+table#tabeladados caption span {
+  color: #000;
+} 
 
 /* Formatação da tag <video> e seu conteúdo */
 video#efeito-estufa {
@@ -112,6 +167,8 @@ div#video1 {}
 blockquote {
   border-left: #009900 5px double;
   text-align: justify;
+  background: #f0fff0;
+  color: #006600;
 }
 
 /* Formatação da classe .direita */
