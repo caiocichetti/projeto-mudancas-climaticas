@@ -9,6 +9,7 @@
 body {
   background-color: #dddddd;
   color: rgba(0, 0, 0, 1);
+  font-family: Arial, sans-serif;
 }
 
 /* Formatação da div Interface */
@@ -46,6 +47,7 @@ nav#menu ul {
 nav#menu li {
   background-color: #dddddd;
   text-decoration: none;
+  font-family: "Comic Sans MS", sans-serif;
 }
 
 nav#menu h1 {}
@@ -75,11 +77,15 @@ header#cabecalho hgroup {}
 
 header#cabecalho h1 {
   color: #606060;
+  font-size: 32pt;
+  font-family: FonteLogo, sans-serif;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .6)
 }
 
 header#cabecalho h2 {
-	color: #888888;
+  color: #888888;
+  font-size: 15pt;
+  font-family: Arial, sans-serif;
 }
 
 /* Formatação da tag <section> */
@@ -91,19 +97,26 @@ section#corpo {
 article#noticia-Principal h2 {
   color: #606060;
   background-color: #dddddd;
+  font-size: 12pt;
 }
 
 article#cabecalho-artigo h1 {
   color: #606060;
+  font-family: FonteLogo, sans-serif;
+  font-size: 19pt;
 }
 
 article#cabecalho-artigo h2 {
 	color: #cecece;
   background-color: #ffffff;
+  font-size: 13pt;
+  font-family: Arial, sans-serif;
 }
 
 article#cabecalho-artigo h3 {
   color: #606060;
+  font-size: 12pt;
+  font-family: Arial, sans-serif;
 }
 
 /* Formataação da tag <aside> e seu conteúdo */
@@ -114,11 +127,14 @@ aside#lateral {
 
 aside#lateral h1 {
   color: #606060;
+  font-family: FonteLogo, sans-serif;
+  font-size: 25pt;
 }
 
 aside#lateral h2 {
   background-color: #606060;
   color: #ffffff;
+  font-size: 15pt;
 }
 
 /* Formatação da tag <footer> e seu conteúdo */
@@ -127,6 +143,8 @@ footer#rodape {
 }
 
 footer#rodape p {
+  text-align: center;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -154,10 +172,13 @@ table#tabeladados td.direito {
 
 table#tabeladados caption {
   color: #888888;
+  font-size: 10pt;
+  font-weight: bolder;
 }
 
 table#tabeladados caption span {
   color: #000;
+  font-size: 9px;
 } 
 
 /* Formatação da tag <video> e seu conteúdo */
