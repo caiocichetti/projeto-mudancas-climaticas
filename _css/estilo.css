@@ -45,6 +45,7 @@ nav#menu ul {
 }
 
 nav#menu li {
+  background-color: #dddddd;
   text-decoration: none;
   font-family: "Comic Sans MS", sans-serif;
 }
