@@ -26,6 +26,7 @@ p {
 /* Formatação de imagens com legendas */
 figure.foto-com-legenda {
   border: 8px white solid;
+  box-shadow: 1px 1px 4px black;
 }
 
 figure.foto-com-legenda img {}
@@ -35,7 +36,9 @@ figure.foto-com-legenda figcaption {
   color: white;
 }
 
-figure.foto-com-legenda:hover figcaption {}
+figure.foto-com-legenda:hover figcaption {
+  opacity: 1;
+}
 
 /* Formatação do menu principal */
 nav#menu {}
@@ -68,6 +71,7 @@ nav#menu a:hover {
 header#cabecalho img {}
 
 header#cabecalho {
+  height: 150px;
   border-bottom: 2px #606060 solid;
   background: url(../_imagens/IMG3.png) no-repeat 0px 5px;
 }
@@ -90,6 +94,7 @@ header#cabecalho h2 {
 /* Formatação da tag <section> */
 section#corpo {
   border-right: 2px solid #606060;
+  width: 480px;
 }
 
 /* Formatação da tag <article> e seu conteúdo */
@@ -122,6 +127,8 @@ article#cabecalho-artigo h3 {
 aside#lateral {
   border: 2px #606060 solid;
   background-color: #dddddd;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+  width: 350px;
 }
 
 aside#lateral h1 {
@@ -157,7 +164,8 @@ table#tabeladados {
 
 table#tabeladados td {
   border: 1px solid #606060;
-  border-spacing: 0px;
+  text-align: center;
+  vertical-align: central;
 }
 
 table#tabeladados td.esquerdo {
@@ -183,10 +191,19 @@ table#tabeladados caption span {
 /* Formatação da tag <video> e seu conteúdo */
 video#efeito-estufa {
   border: 2px #606060 solid;
+  width: 475px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 
-video#outros-videos {}
-div#video1 {}
+video#outros-videos {
+  width: 330px;
+  height: 190px;
+}
+
+div#video1 {
+  width: 350px;
+  height: 190px;
+}
 
 /* Formatação da tag <blockquote> */
 blockquote {
@@ -201,4 +218,8 @@ blockquote {
   text-align: right;
 }
 
-div#imagem {}
+/* Formatação da <div id="imagem"> */
+div#imagem {
+  width: 465px;
+  height: 210px;
+}
