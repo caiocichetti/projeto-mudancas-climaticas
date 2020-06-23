@@ -27,13 +27,20 @@ p {
 figure.foto-com-legenda {
   border: 8px white solid;
   box-shadow: 1px 1px 4px black;
+  position: relative;
 }
 
 figure.foto-com-legenda img {}
 
 figure.foto-com-legenda figcaption {
+  position: absolute;
+  top: 0px;
   background-color: rgba(0, 0, 0, .4);
   color: white;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  opacity: 0;
 }
 
 figure.foto-com-legenda:hover figcaption {
@@ -41,18 +48,26 @@ figure.foto-com-legenda:hover figcaption {
 }
 
 /* Formatação do menu principal */
-nav#menu {}
+nav#menu {
+  display: block;
+}
 
 nav#menu ul {
   text-transform: uppercase;	
+  top: -325px;
+  left: 195px;
+  position: relative;
 }
 
 nav#menu li {
+  display: inline-block;
   background-color: #dddddd;
   font-family: "Comic Sans MS", sans-serif;
 }
 
-nav#menu h1 {}
+nav#menu h1 {
+  display: none;
+}
 
 nav#menu li:hover {
   background-color: #606060;
@@ -68,7 +83,11 @@ nav#menu a:hover {
 }
 
 /* Formatação da taga <header> e seu conteúdo */
-header#cabecalho img {}
+header#cabecalho img {
+  position: relative;
+  top: -40px;
+  left: 760px;
+}
 
 header#cabecalho {
   height: 150px;
@@ -76,7 +95,12 @@ header#cabecalho {
   background: url(../_imagens/IMG3.png) no-repeat 0px 5px;
 }
 
-header#cabecalho hgroup {}
+header#cabecalho hgroup {
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 90px;
+}
 
 header#cabecalho h1 {
   color: #606060;
@@ -94,7 +118,9 @@ header#cabecalho h2 {
 /* Formatação da tag <section> */
 section#corpo {
   border-right: 2px solid #606060;
+  display: block;
   width: 480px;
+  float: left;
 }
 
 /* Formatação da tag <article> e seu conteúdo */
@@ -129,6 +155,8 @@ aside#lateral {
   background-color: #dddddd;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
   width: 350px;
+  float: right;
+  display: block;
 }
 
 aside#lateral h1 {
@@ -145,6 +173,7 @@ aside#lateral h2 {
 
 /* Formatação da tag <footer> e seu conteúdo */
 footer#rodape {
+  clear: both;
   border-top: 2px #606060 solid;
 }
 
@@ -154,7 +183,12 @@ footer#rodape p {
   text-align: center;
 }
 
-footer#rodape img {}
+footer#rodape img {
+  display: block;
+  position: relative;
+  top: -50px;
+  left: 710px;
+}
 
 /* Formatação da Tabela */
 table#tabeladados {
@@ -184,6 +218,8 @@ table#tabeladados caption {
 }
 
 table#tabeladados caption span {
+  display: block;
+  float: right;
   color: #000;
   font-size: 9px;
 } 
