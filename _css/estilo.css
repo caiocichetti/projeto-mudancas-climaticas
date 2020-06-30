@@ -30,7 +30,10 @@ figure.foto-com-legenda {
   position: relative;
 }
 
-figure.foto-com-legenda img {}
+figure.foto-com-legenda img {
+  height: 100%;
+  width: 100%;
+}
 
 figure.foto-com-legenda figcaption {
   position: absolute;
