@@ -14,7 +14,10 @@ body {
 
 /* Formatação da div Interface */
 div#interface {
+  margin: -20px auto 0px auto;
+  padding: 10px 10px 10px 10px;
   background-color: #ffffff;
+  width: 900px;
 }
 
 /* Fromatação das tags <p> */
@@ -44,6 +47,7 @@ figure.foto-com-legenda figcaption {
   height: 100%;
   box-sizing: border-box;
   opacity: 0;
+  padding: 10px;
 }
 
 figure.foto-com-legenda:hover figcaption {
@@ -66,6 +70,7 @@ nav#menu li {
   display: inline-block;
   background-color: #dddddd;
   font-family: "Comic Sans MS", sans-serif;
+  padding: 10px;
 }
 
 nav#menu h1 {
@@ -113,9 +118,26 @@ header#cabecalho h1 {
 }
 
 header#cabecalho h2 {
+  padding: 0px;
+  margin-top: 0px;
   color: #888888;
   font-size: 15pt;
   font-family: Arial, sans-serif;
+}
+
+header#cabecalho-artigo h1 {
+  margin-bottom: 0px;
+  font-family: FonteLogo, sans-serif;
+  font-size: 19pt;
+  color: #606060;
+}
+
+header#cabecalho-artigo h2 {
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  font-size: 13pt;
+  color: #cecece;
+  background-color: #ffffff;
 }
 
 /* Formatação da tag <section> */
@@ -124,6 +146,7 @@ section#corpo {
   display: block;
   width: 480px;
   float: left;
+  padding: 15px;
 }
 
 /* Formatação da tag <article> e seu conteúdo */
@@ -140,6 +163,8 @@ article#cabecalho-artigo h1 {
 }
 
 article#cabecalho-artigo h2 {
+  padding: 5px 0px 5px 10px;
+  margin: 10px 0px 10px 0px;
 	color: #cecece;
   background-color: #ffffff;
   font-size: 13pt;
@@ -160,22 +185,27 @@ aside#lateral {
   width: 350px;
   float: right;
   display: block;
+  padding: 15px;
+  margin-top: 10px;
 }
 
 aside#lateral h1 {
   color: #606060;
   font-family: FonteLogo, sans-serif;
   font-size: 25pt;
+  margin-top: 0px;
 }
 
 aside#lateral h2 {
   background-color: #606060;
   color: #ffffff;
   font-size: 15pt;
+  padding: 10px;
 }
 
 /* Formatação da tag <footer> e seu conteúdo */
 footer#rodape {
+  padding: 5px;
   clear: both;
   border-top: 2px #606060 solid;
 }
@@ -195,6 +225,8 @@ footer#rodape img {
 
 /* Formatação da Tabela */
 table#tabeladados {
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid #606060;
   border-spacing: 0px;
 }
@@ -203,6 +235,7 @@ table#tabeladados td {
   border: 1px solid #606060;
   text-align: center;
   vertical-align: central;
+  padding: 10px;
 }
 
 table#tabeladados td.esquerdo {
@@ -221,6 +254,7 @@ table#tabeladados caption {
 }
 
 table#tabeladados caption span {
+  margin-top: 8px;
   display: block;
   float: right;
   color: #000;
@@ -242,10 +276,16 @@ video#outros-videos {
 div#video1 {
   width: 350px;
   height: 190px;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Formatação da tag <blockquote> */
 blockquote {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
   border-left: #009900 5px double;
   text-align: justify;
   background: #f0fff0;
@@ -259,6 +299,7 @@ blockquote {
 
 /* Formatação da <div id="imagem"> */
 div#imagem {
+  padding: 0px 15px 0px 15px;
   width: 465px;
   height: 210px;
 }
