@@ -18,6 +18,7 @@ div#interface {
   padding: 10px 10px 10px 10px;
   background-color: #ffffff;
   width: 900px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
 }
 
 /* Fromatação das tags <p> */
@@ -114,6 +115,8 @@ header#cabecalho hgroup {
 header#cabecalho h1 {
   color: #606060;
   font-size: 32pt;
+  margin-bottom: 0px;
+  margin-top: 50px;
   font-family: FonteLogo, sans-serif;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .6)
 }
@@ -274,12 +277,12 @@ video#outros-videos {
   height: 190px;
 }
 
-div#video1 {
+/* div#video1 {
   width: 350px;
   height: 190px;
   margin: 0px;
   padding: 0px;
-}
+} */
 
 /* Formatação da tag <blockquote> */
 blockquote {
