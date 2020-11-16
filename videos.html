@@ -6,8 +6,17 @@
     <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
     <link rel="stylesheet" type="text/css" href="_css/videos.css" />
     <script>
-      function mudafoto() {
+      function mudafoto(foto) {
         document.getElementById('imagem').src = foto;
+      }
+      function muda(link) {
+        document.getElementById('chuvisco').pause();
+        document.getElementById('media').src = link + '.mp4';
+        document.getElementById('media').autoplay = 'autoplay';
+      }
+      function encerrar() {
+        document.getElementId('media').src = '';
+        document.getElementById('chuvisco').play();
       }
     </script>
   </head>
@@ -23,12 +32,42 @@
         <nav id="menu">
           <h1>Menu Principal</h1>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="biomas.html">Biomas do Brasil</a></li>
-            <li><a href="fotos.html">Fotos</a></li>
-            <li><a href="videos.html">Vídeos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="restrito.html">Restrito</a></li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG1.png');"
+              onmouseout="mudafoto('_imagens/IMG7.png');"
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG5.png');"
+              onmouseout="mudafoto('_imagens/IMG7.png');"
+            >
+              <a href="biomas.html">Biomas do Brasil</a>
+            </li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG9.png');"
+              onmouseout="mudafoto('_imagens/IMG7.png');"
+            >
+              <a href="fotos.html">Fotos</a>
+            </li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG7.png');"
+              onmouseout="mudafoto('_imagens/IMG7.png');"
+            >
+              <a href="videos.html">Vídeos</a>
+            </li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG8.png');"
+              onmouseout="mudafoto('_imagens/IMG7.png');"
+            >
+              <a href="contato.html">Contato</a>
+            </li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG11.png');"
+              onmouseout="mudafoto('_imagens/IMG7.png');"
+            >
+              <a href="restrito.html">Restrito</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -54,11 +93,11 @@
       </section>
       <section>
         <div id="videos">
-          <a href="#">
+          <a href="#" onclick="muda('_media/Efeito_Estufa');">
             <img src="_imagens/poster_1.jpg" width="358" height="200"
           /></a>
-          <a href="#"
-            ><img src="_imagens/poster_2.jpg" width="358" height="200"
+          <a href="#" onclick="muda('_media/O_que_nos_espera_ no_ futuro');">
+            <img src="_imagens/poster_2.jpg" width="358" height="200"
           /></a>
         </div>
       </section>

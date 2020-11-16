@@ -3,8 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>Mudanças Climáticas</title>
-    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
-    <link rel="stylesheet" type="text/css" href="_css/contato.css"/>	
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="_css/contato.css" />
+    <script>
+      function mudafoto(foto) {
+        document.getElementById('imagem').src = foto;
+      }
+    </script>
   </head>
   <body>
     <div id="interface">
@@ -13,16 +18,46 @@
           <h1>Mudanças Climáticas</h1>
           <h2>Alterações no clima da terra, causas e consequências</h2>
         </hgroup>
-        <img src="_imagens/IMG8.png" />
+        <img id="imagem" src="_imagens/IMG8.png" />
         <nav id="menu">
           <h1>Menu Principal</h1>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="biomas.html">Biomas do Brasil</a></li>
-            <li><a href="fotos.html">Fotos</a></li>
-            <li><a href="videos.html">Vídeos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="restrito.html">Restrito</a></li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG1.png');"
+              onmouseout="mudafoto('_imagens/IMG8.png');"
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG5.png');"
+              onmouseout="mudafoto('_imagens/IMG8.png');"
+            >
+              <a href="biomas.html">Biomas do Brasil</a>
+            </li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG9.png');"
+              onmouseout="mudafoto('_imagens/IMG8.png');"
+            >
+              <a href="fotos.html">Fotos</a>
+            </li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG7.png');"
+              onmouseout="mudafoto('_imagens/IMG8.png');"
+            >
+              <a href="videos.html">Vídeos</a>
+            </li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG8.png');"
+              onmouseout="mudafoto('_imagens/IMG8.png');"
+            >
+              <a href="contato.html">Contato</a>
+            </li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG11.png');"
+              onmouseout="mudafoto('_imagens/IMG8.png');"
+            >
+              <a href="restrito.html">Restrito</a>
+            </li>
           </ul>
         </nav>
       </header>

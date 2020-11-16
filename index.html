@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
     <script>
-      function mudafoto() {
+      function mudafoto(foto) {
         document.getElementById('imagem').src = foto;
       }
     </script>
@@ -34,44 +34,38 @@
           <!-- [Título Nível 1] -->
           <!--[AQUI TEM INÍCIO UMA LISTA NÃO ORDENADA]-->
           <ul>
-            <!--[AQUI TEM INÍCIO AOS ITENS QUE FAZEM PARTE DA LISTA NÃO ORDENADA]-->
             <li
               onmouseover="mudafoto('_imagens/IMG1.png');"
               onmouseout="mudafoto('_imagens/IMG1.png');"
             >
               <a href="index.html">Home</a>
             </li>
-            <!-- [ITEM 1] -->
             <li
               onmouseover="mudafoto('_imagens/IMG5.png');"
               onmouseout="mudafoto('_imagens/IMG1.png');"
             >
               <a href="biomas.html">Biomas do Brasil</a>
             </li>
-            <!-- [ITEM 2] -->
             <li
               onmouseover="mudafoto('_imagens/IMG9.png');"
               onmouseout="mudafoto('_imagens/IMG1.png');"
             >
               <a href="fotos.html">Fotos</a>
             </li>
-            <!-- [ITEM 3] -->
             <li
               onmouseover="mudafoto('_imagens/IMG7.png');"
               onmouseout="mudafoto('_imagens/IMG1.png');"
             >
               <a href="videos.html">Vídeos</a>
             </li>
-            <!-- [ITEM 4] -->
             <li
               onmouseover="mudafoto('_imagens/IMG8.png');"
               onmouseout="mudafoto('_imagens/IMG1.png');"
             >
               <a href="contato.html">Contato</a>
             </li>
-            <!-- [ITEM 5] -->
             <li
-              nmouseover="mudafoto('_imagens/IMG11.png');"
+              onmouseover="mudafoto('_imagens/IMG11.png');"
               onmouseout="mudafoto('_imagens/IMG1.png');"
             >
               <a href="restrito.html">Restrito</a>
