@@ -5,6 +5,11 @@
     <title>Mudanças Climáticas</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+    <script>
+      function mudafoto() {
+        document.getElementById('imagem').src = foto;
+      }
+    </script>
   </head>
 
   <body>
@@ -21,7 +26,7 @@
           <!--[AQUI FINALIZA UM GRUPO DE TÍTULOS (GRUPO 1)]-->
         </hgroup>
         <!-- [AQUI ENTRA A IMAGEM IMG_1]-->
-        <img src="_imagens/IMG1.png" />
+        <img id="imagem" src="_imagens/IMG1.png" />
         <!--[AQUI TEM INÍCIO A ÁREA DE NAVEGAÇÃO(NAV)DA SUA PÁGINA WEB]-->
         <nav id="menu">
           <!-- [INICIO DO MENU DE NAVEGAÇÃO SUPERIOR]-->
@@ -30,17 +35,47 @@
           <!--[AQUI TEM INÍCIO UMA LISTA NÃO ORDENADA]-->
           <ul>
             <!--[AQUI TEM INÍCIO AOS ITENS QUE FAZEM PARTE DA LISTA NÃO ORDENADA]-->
-            <li><a href="index.html">Home</a></li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG1.png');"
+              onmouseout="mudafoto('_imagens/IMG1.png');"
+            >
+              <a href="index.html">Home</a>
+            </li>
             <!-- [ITEM 1] -->
-            <li><a href="biomas.html">Biomas do Brasil</a></li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG5.png');"
+              onmouseout="mudafoto('_imagens/IMG1.png');"
+            >
+              <a href="biomas.html">Biomas do Brasil</a>
+            </li>
             <!-- [ITEM 2] -->
-            <li><a href="fotos.html">Fotos</a></li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG9.png');"
+              onmouseout="mudafoto('_imagens/IMG1.png');"
+            >
+              <a href="fotos.html">Fotos</a>
+            </li>
             <!-- [ITEM 3] -->
-            <li><a href="videos.html">Vídeos</a></li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG7.png');"
+              onmouseout="mudafoto('_imagens/IMG1.png');"
+            >
+              <a href="videos.html">Vídeos</a>
+            </li>
             <!-- [ITEM 4] -->
-            <li><a href="contato.html">Contato</a></li>
+            <li
+              onmouseover="mudafoto('_imagens/IMG8.png');"
+              onmouseout="mudafoto('_imagens/IMG1.png');"
+            >
+              <a href="contato.html">Contato</a>
+            </li>
             <!-- [ITEM 5] -->
-            <li><a href="restrito.html">Restrito</a></li>
+            <li
+              nmouseover="mudafoto('_imagens/IMG11.png');"
+              onmouseout="mudafoto('_imagens/IMG1.png');"
+            >
+              <a href="restrito.html">Restrito</a>
+            </li>
             <!-- [ITEM 6] -->
             <!--[AQUI FINALIZA OS ITENS QUE FAZEM PARTE DA LISTA NÃO ORDENADA]-->
             <!--[AQUI FINALIZA A LISTA NÃO ORDENADA]-->
